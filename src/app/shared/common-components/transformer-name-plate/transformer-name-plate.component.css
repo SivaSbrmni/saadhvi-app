@@ -1,0 +1,41 @@
+#value {
+    border: 2px solid greenyellow;
+    text-align: right;
+    align-items: right;
+}
+
+.highLow {
+    text-align: center;
+    position: relative;
+    border-left: 2px solid green;
+}
+
+.highLow::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 5%;
+    left: 0%;
+    border-top: 2px solid green;
+}
+
+.highLow::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 5%;
+    left: 0%;
+    bottom: 0%;
+    border-bottom: 2px solid green;
+}
+
+#items {
+    border-left: 1px solid greenyellow;
+    display: inline;
+}
+
+.rowItem {
+    display: inline;
+}

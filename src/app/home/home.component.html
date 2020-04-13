@@ -1,0 +1,42 @@
+<div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="center">
+  <mat-card fxFlex="40%">
+    <mat-card-content *ngIf="(trasformerData$ | async) as  manufacturingDetails">
+      <app-render-key-val-pair [data]="manufacturingDetails"></app-render-key-val-pair>
+    </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex="40%">
+    <mat-card-content>
+      <app-transformer-name-plate [data]="nameplate"></app-transformer-name-plate>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="center">
+  <mat-card fxFlex="40">
+    <mat-card-content>
+      <app-parameters></app-parameters>
+    </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex="40">
+    <mat-card-content class="container"  fxLayout="row" fxLayoutWrap fxLayoutGap="1%" *ngIf="(statusArray$ | async) as  status">
+      <!-- <div fxFlex="50" fxLayout="row" *ngFor="let item of status; let even = even; let odd = odd ">
+        <app-status [statusArray]="item"></app-status>
+      </div>       -->
+      <div fxFlex="35" fxLayout="column" class="card-container">
+        <app-status fxFlex="50" [statusArray]="status[0]"></app-status>
+        <app-status fxFlex="50" [statusArray]="status[1]"></app-status>
+      </div>
+      <div fxFlex="30" fxLayout="column" class="card-container">
+        <div fxFlex="30"></div>
+        <app-status fxFlex="50" [statusArray]="status[0]"></app-status>
+        <div fxFlex="10"></div>
+      </div>
+      <div fxFlex="35" fxLayout="column" class="card-container">
+        <app-status fxFlex="50" [statusArray]="status[2]"></app-status>
+        <app-status fxFlex="50" [statusArray]="status[3]"></app-status>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+<mat-card fxFlex="100">
+  <mat-card-title style="text-align: center;">
+    <img  class="image" [src]="statusArray.imageUrl">
+  </mat-card-title>
+  <mat-card-content fxLayout="column">
+    <div *ngFor="let item of statusArray.status">
+      <div fxLayout="row" >
+        <div fxFlex="8" class="square" [style.background-color]="item.color" style="padding-right: 5px;"></div>
+        <div fxFlex="70" style="margin-left: 5px;"> {{item.name}}</div>
+        <div fxFlex="22">{{item.value}} </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,135 @@
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="space-around center">
+  <div fxFlex="30" flexLayout="row" fxLayoutGap="10">
+    <img fxFlex="20" style="padding-left: 10px;" class="image" src="../../../../assets/hot.png">
+    <pre fxFlex="30">11.64%</pre>
+  </div>
+  <mat-chip-list fxFlex="70%" fxLayoutGap="">
+    <mat-chip [color]="'primary'">Inst Parameter</mat-chip>
+    <mat-chip>Alerts</mat-chip>
+    <mat-chip>Main Transformer</mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="space-around center">
+  <div fxFlex="20">Current(A)</div>
+  <mat-card fxFlex="30">
+    <mat-card-content>
+      <!-- <ul class="inline-elem-head">
+        <li>
+          <div>Current(A)</div>
+        </li>
+      </ul> -->
+      <ul class="inline-elem">
+        <span style="display: block; text-align: center;"></span>
+        <li>
+          <div style="color: green;">Y</div>
+          <span>1.02</span>
+        </li>
+        <li>
+          <div style="color: green;">B</div>
+          <span>1.02</span>
+        </li>
+        <li>
+          <div style="color: green;">R</div>
+          <span>1.02</span>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex="50">
+    <mat-card-content>
+      <ul class="inline-elem" style="padding-left: 20px;">
+        <span style="display: block; text-align: center;">Current(%)</span>
+        <li>
+          <div style="color: green;">Y</div>
+          <span>1.02</span>
+        </li>
+        <li>
+          <div style="color: green;">B</div>
+          <span>1.02</span>
+        </li>
+        <li>
+          <div style="color: green;">R</div>
+          <span>1.02</span>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="space-around center">
+  <div fxFlex="40" fxLayout="column">
+    <pre fxFlex="50">Loading(kVA)         : 1254</pre>
+    <pre fxFlex="50">Loading(%)           : 5%</pre>
+  </div>
+  <mat-card fxFlex="20">
+    <mat-card-content>
+      <ul style="list-style-type:none; padding-left: 20px;">
+        <li>
+          <div style="color: green;">Time</div>
+          <span>1.02</span>
+        </li>
+        <li style="padding-top: 10px;">
+          <div style="color: green;">Date Stamp</div>
+          <span>1.02</span>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex="40">
+    <mat-card-content>
+      <ul class="inline-elem" style="padding-left: 20px;">
+        <span style="display: block; text-align: center;">Voltage</span>
+        <li>
+          <div style="color: green;">R-N</div>
+          <span>102</span>
+        </li>
+        <li>
+          <div style="color: green;">Y-N</div>
+          <span>132</span>
+        </li>
+        <li>
+          <div style="color: green;">B-N</div>
+          <span>142</span>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap xFlex="auto" fxLayoutGap="1%"
+  fxLayoutAlign="space-around center">
+  <pre fxFlex="20">Temperature</pre>
+  <mat-card fxFlex="50">
+    <mat-card-content class="aling-center">
+      <div fxFlex="10"></div>
+      <div fxFlex="30" fxLayout="column">
+        <div fxFlex="15" style="color: green;">HST</div>
+        <img fxFlex="80" style="padding-left: 10px;" class="image" src="../../../../assets/temporature.png">
+        <span fxFlex="5">+28.1</span>
+      </div>
+      <div fxFlex="30" fxLayout="column">
+        <div fxFlex="15" style="color: green;">Tap Oil</div>
+        <img fxFlex="80" style="padding-left: 10px;" class="image" src="../../../../assets/temporature.png">
+        <span fxFlex="5">+28.1</span>
+      </div>
+      <div fxFlex="30" fxLayout="column">
+        <div fxFlex="15" style="color: green;">Conservator</div>
+        <img fxFlex="80" style="padding-left: 10px;" class="image" src="../../../../assets/temporature.png">
+        <span fxFlex="5">+28.1</span>
+      </div>
+      <div fxFlex="10"></div>
+    </mat-card-content>
+  </mat-card>
+  <div fxFlex="10"></div>
+  <mat-card fxFlex="20">
+    <mat-card-content class="aling-center" fxLayout="column">
+      <div fxFlex="15" style="color: green;">Oil Level</div>
+      <img fxFlex="85" style="padding-left: 10px; text-align: left;" src="../../../../assets/oil-level.png">
+    </mat-card-content>
+  </mat-card>
+
+</div>

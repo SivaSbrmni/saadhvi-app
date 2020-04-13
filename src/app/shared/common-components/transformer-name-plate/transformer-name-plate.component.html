@@ -1,0 +1,56 @@
+<div style="display: inline;">
+  <table>
+    <caption style="text-align: left; color: green;">Transformer Name Plate</caption>
+    <tr>
+      <td style="width:50%;">
+        <table>
+          <tr>
+            <td colspan="3" style="width:50%;"></td>
+            <td colspan="3" style="width:20%;"></td>
+            <td colspan="3" style="width:20%;"></td>
+          </tr>
+          <tr *ngFor="let row of arrayOfConfigKeys">
+            <td colspan="3"><b>{{row}}</b></td>
+            <td colspan="3" [ngClass]="(data.config[row].length<2) ? '':'highLow' ">
+              <div *ngFor="let item of data.config[row]">{{!!item.highLow ? item.highLow : ""}}
+              </div>
+            </td>
+            <td colspan="3" id="value">
+              <div *ngFor="let item of data.config[row]">
+                <div class="rowItem">{{item.value}}</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td style="width:50%;">
+        <table>
+          <tr>
+            <td colspan="3" style="width:50%;"></td>
+            <td colspan="3" style="width:20%;"></td>
+            <td colspan="3" style="width:20%;"></td>
+          </tr>
+          <tr *ngFor="let row of arrayOfParamKeys">
+            <td colspan="3"><b>{{row}}</b></td>
+            <td colspan="3" id="value">
+              <div *ngFor="let item of data.param[row]">
+                <div class="rowItem">{{item.value}}</div>
+              </div>
+            </td>
+            <td colspan="3">
+              <div *ngFor="let item of data.param[row]">{{item.unit}}
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+  <div style="width: 30%;">
+
+  </div>
+  <div style="width: 40%;">
+  </div>
+
+</div>

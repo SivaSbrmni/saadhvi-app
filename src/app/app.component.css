@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+.user-avatar {
+    max-height: 35px;
+    border-radius: 4px;
+}
+
+/* .mat-icon {
+    font-size: 60px;
+} */
+
+.toolbar-tools {
+    display: flex;
+    width: 100%;
+}
+
+.filler {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.mat-tab-link:focus {
+    color: #800080;
+    /* obvious color for demo */
+}
+
+/* Ng deep to override material color */
+
+::ng-deep .mat-tab-list {
+    background: linear-gradient(to right, #00ffcc 14%, #009999 63%);
+    display: flex;
+    justify-content: center;
+}
+
+::ng-deep .mat-align-tabs {
+    justify-content: center;
+}

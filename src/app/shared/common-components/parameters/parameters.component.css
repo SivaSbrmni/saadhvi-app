@@ -1,0 +1,33 @@
+.image {
+    max-height: 35px;
+    border-radius: 4px;
+}
+
+.container {
+    margin-top: 1%;
+}
+
+.inline-elem li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.inline-elem {
+    display: inline-block;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+.inline-elem-head {
+    display: inline-block;
+    padding: 10px;
+}
+
+.inline-elem-head li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.aling-center * {
+    text-align: center;
+}

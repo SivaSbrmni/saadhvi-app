@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "saadhvi-app"
+    }
+  },
+  "defaultProject": "saadhvi-app",
+  "cli": {
+    "analytics": "677d440f-1744-4ef7-bdf9-d6e6d2247972"
+  }
 }
