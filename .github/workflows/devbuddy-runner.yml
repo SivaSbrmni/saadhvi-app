@@ -1,0 +1,23 @@
+# DevBuddy Agent Runner — registered by DevBuddy
+# This stub enables workflow_dispatch. The actual task workflow
+# runs from the devbuddy/* task branch.
+name: DevBuddy Agent Runner
+on:
+  workflow_dispatch:
+    inputs:
+      task_id:
+        description: 'Task ID'
+        required: true
+      task:
+        description: 'Engineering task description'
+        required: true
+      devbuddy_url:
+        description: 'DevBuddy server URL'
+        required: false
+jobs:
+  agent:
+    name: 'DevBuddy Agent'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo 'DevBuddy runner stub — task branch has the real workflow'
